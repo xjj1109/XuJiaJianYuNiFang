@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/biankuang3">
+
+    <ImageView
+        android:id="@+id/things_img"
+        android:layout_width="200px"
+        android:layout_height="200px" />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+    android:id="@+id/things_name"
+        android:text="ss"/>  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/things_des"
+        android:text="简介"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ff79bc"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:id="@+id/things_price"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#d0d0d0"
+            android:layout_height="wrap_content"
+            android:text="yuanshijiange"
+            android:layout_marginLeft="10px"
+            android:id="@+id/things_old_price"/>
+    </LinearLayout>
+</LinearLayout>

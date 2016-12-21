@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px">
+<ImageView
+    android:id="@+id/mine_fragment_img"
+    android:layout_width="60px"
+    android:layout_height="60px"
+    android:src="@mipmap/shezhi"
+
+    />
+    <TextView
+        android:layout_toRightOf="@+id/mine_fragment_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:text="ss"
+       android:textSize="20sp"
+        android:id="@+id/mine_fragment_tv"/>
+
+   <ImageView
+       android:id="@+id/meiyong"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="40px"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@mipmap/next_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mine_fragment_tv2"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@+id/meiyong"
+            android:textColor="#ff0"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mine_fragment_tv3"
+
+            android:textSize="20sp"
+            android:layout_toLeftOf="@+id/meiyong"
+            android:textColor="#f00"/>
+    </RelativeLayout>
+</LinearLayout>

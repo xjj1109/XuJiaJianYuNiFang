@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400px"
+        android:id="@+id/rl"
+        android:background="@mipmap/user_center_bg">
+
+        <ImageView
+            android:id="@+id/shezhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20px"
+            android:src="@mipmap/a2" />
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_below="@+id/shezhi"
+            android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="20px"
+            android:src="@mipmap/a1" />
+        <Button
+            android:id="@+id/login"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            android:layout_below="@+id/touxiang"
+            android:background="@mipmap/checkin_btn_bg"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/wait_pay"
+            android:text="待付款" />
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/wait_send_good"
+            android:text="待发货" />
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/wait_receive_good"
+            android:text="待收货" />
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:drawableTop="@mipmap/wait_evaluate"
+            android:text="待评价" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+                android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/wait_refund"
+            android:text="退款" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:id="@+id/lv"></ListView>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

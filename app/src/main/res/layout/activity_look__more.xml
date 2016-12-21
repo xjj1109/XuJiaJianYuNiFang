@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/look_more_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:src="@mipmap/back_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="全部商品"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5px"
+        android:background="#d0d0d0"></LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/moren"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:checked="true"
+            android:textColor="@drawable/radio_button"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="默认排序"
+
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/shengxu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:textColor="@drawable/radio_button"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="价格升序"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/jiangxu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/radio_button"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="价格降序"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp">
+
+        <TextView
+            android:id="@+id/moren_line"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#f00" />
+
+        <TextView
+            android:id="@+id/shengxu_line"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#d0d0d0" />
+
+        <TextView
+            android:id="@+id/jiangxu_line"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#d0d0d0" />
+
+    </LinearLayout>
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:id="@+id/gv9"></GridView>
+
+    </com.liaoinstan.springview.widget.SpringView>
+
+
+</LinearLayout>

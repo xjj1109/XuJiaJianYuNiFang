@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff79bc"
+         android:text="第三方快速登陆"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/sss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三方快速登陆用户不享受任何御泥坊会员权益"
+            android:layout_below="@+id/ss"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+    <LinearLayout
+        android:id="@+id/s3"
+        android:layout_below="@+id/sss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/qq_disanfang"/>
+        <ImageView
+            android:id="@+id/wx"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/disanfang_wx"/>
+        <ImageView
+            android:id="@+id/xl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/weixin_disanfang"/>
+    </LinearLayout>
+<ImageView
+    android:layout_below="@+id/s3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/face_guidance_1"/>
+</RelativeLayout>

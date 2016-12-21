@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全选"
+        android:background="@drawable/button_more"
+        android:id="@+id/quanxuan_btn"/>
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="反选"
+    android:background="@drawable/button_more"
+        android:id="@+id/fanxuan_btn"/>
+</LinearLayout>
+    <ListView
+         android:layout_marginTop="20dp"
+        android:id="@+id/cart_dao_lv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"></ListView>
+  </LinearLayout>
+    <Button
+        android:id="@+id/delete_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

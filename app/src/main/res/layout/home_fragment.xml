@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lin99">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="御泥坊VIP商城"
+            android:textColor="#ff95ca" />
+    </LinearLayout>
+
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollview2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"></android.support.v4.view.ViewPager>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:orientation="horizontal"
+                    android:layout_alignBottom="@id/vp3"
+                    android:id="@+id/home_lin"></LinearLayout>
+            </RelativeLayout>
+                <GridView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_fragment_gv"
+                    android:numColumns="4"></GridView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#d0D0D0"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--优惠活动-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/c1" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clipChildren="false">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp4"
+                        android:layout_width="420px"
+                        android:layout_height="240px"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="120px"
+                        android:layout_marginRight="120px"
+                        android:layout_marginTop="20px"
+                        android:layout_marginBottom="20px"
+                        android:clipChildren="false"
+                     ></android.support.v4.view.ViewPager>
+                    </FrameLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/r2" />
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="3200dp"
+                        android:id="@+id/lv"></ListView>
+                </LinearLayout>
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:id="@+id/gv6"
+            android:verticalSpacing="3dp"
+            android:horizontalSpacing="4dp"
+            android:background="#Bebebe"
+            android:numColumns="2"></GridView>
+                <Button
+                    android:id="@+id/look_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff00"
+                    android:text="加载更多"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>
